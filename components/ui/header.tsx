@@ -10,7 +10,7 @@ export default function Header({ nav = true }: {
           {/* Site branding */}
           <div className="shrink-0 mr-4">
             {/* Logo */}
-            <Link className="block" href="/" aria-label="Cruip">
+            {/* <Link className="block" href="/" aria-label="Cruip">
               <svg className="w-8 h-8" viewBox="0 0 32 32" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <radialGradient cx="50%" cy="89.845%" fx="50%" fy="89.845%" r="108.567%" gradientTransform="matrix(-.00915 -.82755 .99996 -.00757 -.394 1.319)" id="logo1-b">
@@ -30,7 +30,7 @@ export default function Header({ nav = true }: {
                   <use fill="url(#logo1-d)" opacity=".961" xlinkHref="#logo1-c" />
                 </g>
               </svg>
-            </Link>
+            </Link> */}
           </div>
 
           {/* Desktop navigation */}
@@ -39,12 +39,12 @@ export default function Header({ nav = true }: {
               {/* Desktop sign in links */}
               <ul className="flex grow justify-end flex-wrap items-center">
                 <li>
-                  <Link className="font-medium text-gray-400 hover:text-blue-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out" href="/signin">Sign in</Link>
+                  {/* <Link className="font-medium text-gray-400 hover:text-blue-500 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out" href="/signin">Sign in</Link> */}
                 </li>
                 <li className="ml-3">
-                  <Link className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
+                  {/* <Link className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
                     Get Started <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
-                  </Link>
+                  </Link> */}
                 </li>
               </ul>
             </nav>

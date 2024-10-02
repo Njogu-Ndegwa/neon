@@ -9,17 +9,17 @@ export default function Resources() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        {/* <div className="py-12 md:py-20"> */}
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+          {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 font-uncut-sans">Resources to help you get the most out of Neon</h2>
-          </div>
+          </div> */}
           {/* Content */}
-          <div>
+          {/* <div> */}
             {/* Category buttons */}
-            <div className="mb-16">
-              <div className="flex flex-wrap justify-center -m-2.5">
-                <div className={`${category === '1' && 'rotate-2'}`}>
+            {/* <div className="mb-16">
+              <div className="flex flex-wrap justify-center -m-2.5"> */}
+                {/* <div className={`${category === '1' && 'rotate-2'}`}>
                   <button className={`relative font-medium px-3 py-1.5 bg-gray-800 rounded-full inline-flex m-2.5 group before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:rounded-full ${category === '1' ? 'shadow-lg shadow-blue-500/25 before:via-gray-300' : 'before:via-gray-600'}`} onClick={() => setCategory('1')}>
                     <div className="flex items-center justify-center">
                       <svg className={`w-3 h-3 shrink-0 fill-gray-400 mr-2 ${category === '1' && 'fill-white'}`} viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -28,8 +28,8 @@ export default function Resources() {
                       <span className={`transition duration-150 ease-in-out ${category === '1' ? 'text-blue-500' : 'text-gray-400 group-hover:text-gray-300'}`}>For Developers</span>
                     </div>
                   </button>
-                </div>
-                <div className={`${category === '2' && 'rotate-2'}`}>
+                </div> */}
+                {/* <div className={`${category === '2' && 'rotate-2'}`}>
                   <button className={`relative font-medium px-3 py-1.5 bg-gray-800 rounded-full inline-flex m-2.5 group before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:rounded-full ${category === '2' ? 'shadow-lg shadow-blue-500/25 before:via-gray-300' : 'before:via-gray-600'}`} onClick={() => setCategory('2')}>
                     <div className="flex items-center justify-center">
                       <svg className={`w-3 h-3 shrink-0 fill-gray-400 mr-2 ${category === '2' && 'fill-white'}`} viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -38,8 +38,8 @@ export default function Resources() {
                       <span className={`transition duration-150 ease-in-out ${category === '2' ? 'text-blue-500' : 'text-gray-400 group-hover:text-gray-300'}`}>For Designers</span>
                     </div>
                   </button>
-                </div>
-                <div className={`${category === '3' && 'rotate-2'}`}>
+                </div> */}
+                {/* <div className={`${category === '3' && 'rotate-2'}`}>
                   <button className={`relative font-medium px-3 py-1.5 bg-gray-800 rounded-full inline-flex m-2.5 group before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:rounded-full ${category === '3' ? 'shadow-lg shadow-blue-500/25 before:via-gray-300' : 'before:via-gray-600'}`} onClick={() => setCategory('3')}>
                     <div className="flex items-center justify-center">
                       <svg className={`w-3 h-3 shrink-0 fill-gray-400 mr-2 ${category === '3' && 'fill-white'}`} viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -48,8 +48,8 @@ export default function Resources() {
                       <span className={`transition duration-150 ease-in-out ${category === '3' ? 'text-blue-500' : 'text-gray-400 group-hover:text-gray-300'}`}>For Founders</span>
                     </div>
                   </button>
-                </div>
-                <div className={`${category === '4' && 'rotate-2'}`}>
+                </div> */}
+                {/* <div className={`${category === '4' && 'rotate-2'}`}>
                   <button className={`relative font-medium px-3 py-1.5 bg-gray-800 rounded-full inline-flex m-2.5 group before:content-[''] before:absolute before:-z-10 before:inset-0 before:-m-0.5 before:bg-gradient-to-t before:from-gray-800 before:to-gray-800 before:rounded-full ${category === '4' ? 'shadow-lg shadow-blue-500/25 before:via-gray-300' : 'before:via-gray-600'}`} onClick={() => setCategory('4')}>
                     <div className="flex items-center justify-center">
                       <svg className={`w-3 h-3 shrink-0 fill-gray-400 mr-2 ${category === '4' && 'fill-white'}`} viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -58,13 +58,13 @@ export default function Resources() {
                       <span className={`transition duration-150 ease-in-out ${category === '4' ? 'text-blue-500' : 'text-gray-400 group-hover:text-gray-300'}`}>For Marketers</span>
                     </div>
                   </button>
-                </div>
-              </div>
-            </div>
+                </div> */}
+              {/* </div>
+            </div> */}
             {/* Boxes */}
-            <div className="max-w-sm mx-auto sm:max-w-none grid gap-12 sm:grid-cols-2 md:grid-cols-4 sm:gap-x-6 sm:gap-y-8 items-start">
+            {/* <div className="max-w-sm mx-auto sm:max-w-none grid gap-12 sm:grid-cols-2 md:grid-cols-4 sm:gap-x-6 sm:gap-y-8 items-start"> */}
               {/* 1st Box */}
-              <a
+              {/* <a
                 className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group ${!['1', '3', '4'].includes(category) && 'hidden'}`}
                 href="#0"
               >
@@ -74,9 +74,9 @@ export default function Resources() {
                   </svg>
                 </div>
                 <div className="font-uncut-sans text-xl text-gray-100 font-semibold">Neon Telegram</div>
-              </a>
+              </a> */}
               {/* 2nd Box */}
-              <a
+              {/* <a
                 className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group ${!['2', '3'].includes(category) && 'hidden'}`}
                 href="#0"
               >
@@ -86,9 +86,9 @@ export default function Resources() {
                   </svg>
                 </div>
                 <div className="font-uncut-sans text-xl text-gray-100 font-semibold">Neon Discord</div>
-              </a>
+              </a> */}
               {/* 3rd Box */}
-              <a
+              {/* <a
                 className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group ${!['2', '3', '4'].includes(category) && 'hidden'}`}
                 href="#0"
               >
@@ -98,9 +98,9 @@ export default function Resources() {
                   </svg>
                 </div>
                 <div className="font-uncut-sans text-xl text-gray-100 font-semibold">Neon Medium</div>
-              </a>
+              </a> */}
               {/* 4th Box */}
-              <a
+              {/* <a
                 className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group ${!['1', '4'].includes(category) && 'hidden'}`}
                 href="#0"
               >
@@ -110,9 +110,9 @@ export default function Resources() {
                   </svg>
                 </div>
                 <div className="font-uncut-sans text-xl text-gray-100 font-semibold">Neon GitHub</div>
-              </a>
+              </a> */}
               {/* 5th Box */}
-              <a
+              {/* <a
                 className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group ${!['1', '2', '3'].includes(category) && 'hidden'}`}
                 href="#0"
               >
@@ -123,9 +123,9 @@ export default function Resources() {
                   </svg>
                 </div>
                 <div className="font-uncut-sans text-xl text-gray-100 font-semibold">Neon Docs</div>
-              </a>
+              </a> */}
               {/* 6th Box */}
-              <a
+              {/* <a
                 className={`block relative before:content-[''] before:bg-gray-800 before:absolute before:-z-10 before:inset-0 p-6 group ${!['1', '2', '4'].includes(category) && 'hidden'}`}
                 href="#0"
               >
@@ -135,11 +135,11 @@ export default function Resources() {
                   </svg>
                 </div>
                 <div className="font-uncut-sans text-xl text-gray-100 font-semibold">Neon Tutorials</div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+              </a> */}
+            {/* </div> */}
+          {/* </div> */}
+      {/* //   </div> */}
+       </div>
     </section>
   )
 }

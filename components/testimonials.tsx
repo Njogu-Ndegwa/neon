@@ -20,7 +20,7 @@ export default function Testimonials() {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-uncut-sans">Sound too good? Hear what our customers have to say</h2>
+            <h2 className="h2 font-uncut-sans">Testimonials</h2>
           </div>
           {/* Testimonials container */}
           <div className="max-w-sm mx-auto sm:max-w-none grid gap-12 sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6 sm:gap-y-8 items-start" data-aos-id-testimonials>
@@ -30,10 +30,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage01} width={48} height={48} alt="Testimonial 01" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">Compared to other offerings, Neon always has a head start and introduces bleeding edge features first.</p>
+                <p className="text-gray-400">The hands-on experience I gained, especially in web development, was instrumental in helping me land my first job as a front-end developer.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Mark Luiss</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Apprenda</a>
+                <span className="text-gray-300">Sarah Kimani</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Web Development Graduate</a>
               </footer>
             </article>
             {/* 2nd Testimonial */}
@@ -42,10 +42,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage02} width={48} height={48} alt="Testimonial 02" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">Neon has made a huge impact on compliance, while helping us become more transparent.</p>
+                <p className="text-gray-400">I came into the program with zero tech experience, but the personalized learning paths and constant support from instructors made all the difference. Now, I’m developing mobile apps for clients worldwide.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Patrick Mills</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">AppDonkey</a>
+                <span className="text-gray-300">Mark Timpian</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Mobile App Development Graduate</a>
               </footer>
             </article>
             {/* 3rd Testimonial */}
@@ -54,10 +54,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage03} width={48} height={48} alt="Testimonial 03" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">GitHub provides tools that are, in a sense, invisible. You don't have to waste time trying to get them to work.</p>
+                <p className="text-gray-400">The real-world projects here mirror what I do in my job as a data analyst. I was ready to hit the ground running!</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">David Collison</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">BrainTwo</a>
+                <span className="text-gray-300">David Maina</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Data Science Graduate</a>
               </footer>
             </article>
             {/* 4th Testimonial */}
@@ -66,10 +66,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage04} width={48} height={48} alt="Testimonial 04" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">Neon is the tool devs. The more you can make work feel native for a developer, the more cool their experience.</p>
+                <p className="text-gray-400">The tech school offers more than just coding skills—it teaches you how to think like a developer. The problem-solving mindset I developed here has been invaluable in my day-to-day work.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Licia McFarland</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Paytable</a>
+                <span className="text-gray-300">Andrew Mueni</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0"> Software Engineering Graduate</a>
               </footer>
             </article>
             {/* 5th Testimonial */}
@@ -78,10 +78,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage05} width={48} height={48} alt="Testimonial 05" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">Neon comes into play during the entire software life cycle. It's the de facto tool for anything related to our software.</p>
+                <p className="text-gray-400">The instructors were always available to answer questions, and their real-world insights made the lessons so much more impactful.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Rossana Alecu</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Bolt Money</a>
+                <span className="text-gray-300">Rebecca Wanjiru</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">DevOps Engineering Graduate</a>
               </footer>
             </article>
             {/* 6th Testimonial */}
@@ -90,10 +90,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage06} width={48} height={48} alt="Testimonial 06" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">I have no tech skills and with Neon I can actually make good looking apps with ease.</p>
+                <p className="text-gray-400">The curriculum focus on both speed and quality gave me confidence to work on larger, scalable projects.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Max Corsano</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">MixTech</a>
+                <span className="text-gray-300">Jessica Mwende</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Data Science Graduate</a>
               </footer>
             </article>
             {/* 7th Testimonial */}
@@ -102,10 +102,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage07} width={48} height={48} alt="Testimonial 07" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">It's not just easier to get in touch with developers, it's also easier to bring in other team members.</p>
+                <p className="text-gray-400">The structured learning paths were a game-changer. I knew exactly what to focus on in each stage of the course, and by the end, I had a portfolio of projects that impressed potential employers.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Anna Pratt</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Cloud Inc</a>
+                <span className="text-gray-300">Eliud Chege</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Mobile App Development Graduate</a>
               </footer>
             </article>
             {/* 8th Testimonial */}
@@ -114,10 +114,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage08} width={48} height={48} alt="Testimonial 08" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">Tools like Neon Advanced Security help keep our team lean. It makes us much more efficient.</p>
+                <p className="text-gray-400">I went from novice to leading tech projects thanks to the school's practical, real-world training.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Veerle Larson</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Prinso</a>
+                <span className="text-gray-300">Troye Sivan</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Web Development Graduate</a>
               </footer>
             </article>
             {/* 9th Testimonial */}
@@ -126,10 +126,10 @@ export default function Testimonials() {
                 <Image className="rounded-full shrink-0" src={TestimonialsImage09} width={48} height={48} alt="Testimonial 09" />
               </header>
               <div className="grow mb-3">
-                <p className="text-gray-400">Neon enables speed and scale. We can work on bigger projects and finish them faster.</p>
+                <p className="text-gray-400">Expert instructor feedback made learning smooth and prepared me for real-world challenges. I now feel ready for anything in the tech industry.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Ana Kennedy</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Syntax Inc</a>
+                <span className="text-gray-300">Lavrans Seven</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Full-Stack Development Graduate</a>
               </footer>
             </article>
           </div>
