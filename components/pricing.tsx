@@ -12,7 +12,7 @@ export default function Pricing() {
         <div className="py-12 md:py-20 border-t border-gray-800">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-uncut-sans mb-4">Find a Plan That's Right for You</h2>
+            <h2 className="h2 font-uncut-sans mb-4">Find a Plan That's Right for You, 20% off for a limited time</h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400">
               For individuals eager to develop skills in web development, data science, and mobile app development.
@@ -26,8 +26,8 @@ export default function Pricing() {
               <div className="mb-6">
                 <div className="text-lg font-semibold mb-1">Web Development</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
-                  <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7">926</span>
+                  <span className="text-3xl font-medium text-gray-400">KES</span>
+                  <span className="text-4xl font-bold leading-7">100,000</span>
                   <span className="font-medium text-gray-400">/6mo</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams building apps for many public &amp; private users.</div>
@@ -80,8 +80,8 @@ export default function Pricing() {
               <div className="mb-6">
                 <div className="text-lg font-semibold mb-1">Data Science</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
-                  <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7">926</span>
+                  <span className="text-3xl font-medium text-gray-400">KES</span>
+                  <span className="text-4xl font-bold leading-7"> 100,000</span>
                   <span className="font-medium text-gray-400">/6mo</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams analyzing data to gain insights for diverse public &amp; private users.</div>
@@ -137,8 +137,8 @@ export default function Pricing() {
               <div className="mb-6">
                 <div className="text-lg font-semibold mb-1">Mobile App Development</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
-                  <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7">926</span>
+                  <span className="text-3xl font-medium text-gray-400">KES</span>
+                  <span className="text-4xl font-bold leading-7">100,000</span>
                   <span className="font-medium text-gray-400">/6mo</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams developing mobile apps for diverse public &amp; private users.</div>

@@ -45,7 +45,7 @@ export default function Testimonials() {
                 <p className="text-gray-400">I came into the program with zero tech experience, but the personalized learning paths and constant support from instructors made all the difference. Now, I’m developing mobile apps for clients worldwide.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Mark Timpian</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Mobile App Development Graduate</a>
+                <span className="text-gray-300">Mark Kimani</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Mobile App Development Graduate</a>
               </footer>
             </article>
             {/* 3rd Testimonial */}
@@ -117,7 +117,7 @@ export default function Testimonials() {
                 <p className="text-gray-400">I went from novice to leading tech projects thanks to the school's practical, real-world training.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Troye Sivan</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Web Development Graduate</a>
+                <span className="text-gray-300">Andrew Rotich</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Web Development Graduate</a>
               </footer>
             </article>
             {/* 9th Testimonial */}
@@ -129,7 +129,7 @@ export default function Testimonials() {
                 <p className="text-gray-400">Expert instructor feedback made learning smooth and prepared me for real-world challenges. I now feel ready for anything in the tech industry.</p>
               </div>
               <footer className="text-sm text-gray-400">
-                <span className="text-gray-300">Lavrans Seven</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Full-Stack Development Graduate</a>
+                <span className="text-gray-300">Kevin Kibwasi</span> - <a className="font-medium text-blue-500 hover:text-blue-400 transition duration-150 ease-in-out" href="#0">Full-Stack Development Graduate</a>
               </footer>
             </article>
           </div>

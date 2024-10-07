@@ -15,7 +15,7 @@ export default function Features02() {
         <div className="py-12 md:py-20">
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 font-uncut-sans mb-4">Gain Real-World Experience with Cutting-Edge Tools</h2>
+            <h2 className="h2 font-uncut-sans mb-4">Learn from Industry Professionals using the latest technologies.</h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400">Prepare for success in the tech industry with hands-on, practical learning.</p>
             </div>
