@@ -1,3 +1,6 @@
+"use client";
+
+import { Link as ScrollLink } from 'react-scroll';
 import Image from 'next/image'
 
 import Illustration from '@/public/images/hero-illustration.svg'
@@ -30,10 +33,10 @@ export default function Hero() {
               </div>
             </div> */}
             <h1 className="h1 font-uncut-sans mb-6" data-aos="zoom-out" data-aos-delay="100">
-            Master the Skills of Tomorrow,<em className="font-italic"> Today </em>
+              Master the Skills of Tomorrow,<em className="font-italic"> Today </em>
             </h1>
             <p className="text-xl text-gray-400 mb-10" data-aos="zoom-out" data-aos-delay="200">
-            
+
             </p>
             <div
               className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4"
@@ -41,17 +44,45 @@ export default function Hero() {
               data-aos-delay="300"
             >
               <div>
-                <a className="btn text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
+                <ScrollLink
+                  to="resources" // This is the ID of the Resources section
+                  smooth={true}
+                  duration={500}
+                  offset={-70} // Offset for sticky header if necessary
+                  className="btn text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group cursor-pointer"
+                >
                   Contact Us{' '}
                   <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
-                </a>
+                </ScrollLink>
+                {/* <ScrollLink
+                  to="resources" // This is the ID of the Resources section
+                  smooth={true}
+                  duration={500}
+                  offset={-70} // Offset for sticky header if necessary
+                >
+                  <a className="btn text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group">
+                    Contact Us{' '}
+                    <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                      -&gt;
+                    </span>
+                  </a>
+                </ScrollLink> */}
               </div>
               <div>
-                <a className="btn text-gray-300 bg-gradient-to-t from-gray-800 to-gray-700 hover:to-gray-800 w-full shadow-lg" href="#0">
+                {/* <a className="btn text-gray-300 bg-gradient-to-t from-gray-800 to-gray-700 hover:to-gray-800 w-full shadow-lg" href="#0">
                   Explore Courses
-                </a>
+                </a> */}
+                <ScrollLink
+                  to="courses" // This is the ID of the Courses section
+                  smooth={true}
+                  duration={500}
+                  offset={-70} // Offset for sticky header if necessary
+                  className="btn text-gray-300 bg-gradient-to-t from-gray-800 to-gray-700 hover:to-gray-800 w-full shadow-lg cursor-pointer"
+                >
+                  Explore Courses
+                </ScrollLink>
               </div>
             </div>
           </div>

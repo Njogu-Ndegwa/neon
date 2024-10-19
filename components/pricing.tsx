@@ -3,7 +3,7 @@ import Illustration from '@/public/images/pricing-illustration.svg'
 
 export default function Pricing() {
   return (
-    <section className="relative">
+    <section id="courses" className="relative">
       {/* Illustration */}
       <div className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 pointer-events-none -z-10" aria-hidden="true">
         <Image src={Illustration} className="max-w-none" width={618} height={468} alt="Pricing Illustration" />
