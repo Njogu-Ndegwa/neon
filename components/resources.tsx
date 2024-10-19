@@ -205,7 +205,7 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import PageHeader from './page-header';
-import {sendContactForm} from '../services/index';
+import { sendContactForm } from '../services/index';
 import Notiflix from 'notiflix';
 
 export default function Contact() {
@@ -228,7 +228,7 @@ export default function Contact() {
   });
 
   // Handler to capture form data changes
-  const handleInputChange = (e:any) => {
+  const handleInputChange = (e: any) => {
     const { name, value, type, checked } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -237,7 +237,7 @@ export default function Contact() {
   };
 
   // Handler for form submission
-  const handleSubmit =  async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     console.log('Form Data:', formData);
     // You can perform further actions like sending the data to an API endpoint here
@@ -249,15 +249,15 @@ export default function Contact() {
       phone: formData.phone
     });
 
-    if(res === 0) {
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-      phone: "",
-      updates: false
-    })
-    Notiflix.Notify.success("Comment Saved Successfully")
+    if (res === 0) {
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+        phone: "",
+        updates: false
+      })
+      Notiflix.Notify.success("Comment Saved Successfully")
     } else {
       Notiflix.Notify.failure("Comment Sending Failed. Try Again")
     }
@@ -275,7 +275,7 @@ export default function Contact() {
           />
 
           {/* Contact form */}
-          <div className="relative flex items-center justify-center gap-10 before:h-px before:w-full before:border-b before:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.16),transparent)1] before:shadow-none after:h-px after:w-full after:border-b after:[border-image:linear-gradient(to_right,transparent,theme(colors.indigo.300/.16),transparent)1] after:shadow-none mb-16 pb-3">
+          <div className="relative flex items-center justify-center gap-10 before:w-full   after:h-px after:w-full after:shadow-none mb-16 pb-3">
             <div className="w-full max-w-xs mx-auto shrink-0">
               <form className="relative" onSubmit={handleSubmit}>
                 <div className="space-y-5">
@@ -360,6 +360,83 @@ export default function Contact() {
                   </div>
                 </div>
               </form>
+            </div>
+          </div>
+          <div className="max-w-xs md:max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-6 xl:gap-9 xl:mx-8 max-md:-mx-3">
+              {/* Card */}
+              <div className="flex flex-col rounded-lg  bg-gradient-to-b from-gray-700/50 to-gray-700/40 p-5">
+                <div className="grow mb-3">
+                  <div className="font-inter-tight font-semibold text-gray-200 mb-1">
+                    Email
+                  </div>
+                  <p className="text-sm text-gray-500">
+                    Email us your queries and we'll get back to you ASAP.
+                  </p>
+                </div>
+                <div className="flex items-center space-x-2.5">
+                  <svg
+                    className="shrink-0 fill-indigo-500/80"
+                    width={16}
+                    height={16}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M8 0a8 8 0 1 0 3.2 15.335l.916-.4-.8-1.833-.916.4A6 6 0 1 1 14 8v1a1 1 0 1 1-2 0V8a4.033 4.033 0 1 0-1.286 2.92A2.987 2.987 0 0 0 16 9V8a8.009 8.009 0 0 0-8-8Zm0 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4Z" />
+                  </svg>
+                  <div className="text-sm text-gray-200">
+                    contact@ufundi.co.ke
+                  </div>
+                </div>
+              </div>
+
+              {/* Card */}
+              <div className="flex flex-col rounded-lg  bg-gradient-to-b from-gray-700/50 to-gray-700/40 p-5">
+                <div className="grow mb-3">
+                  <div className="font-inter-tight font-semibold text-gray-200 mb-1">
+                    Address
+                  </div>
+                  <p className="text-sm text-gray-500">
+                    Prefer to visit? We're located in Westlands, Nairobi.
+                  </p>
+                </div>
+                <div className="flex items-center space-x-2.5">
+                  <svg
+                    className="shrink-0 fill-indigo-500/80"
+                    width={14}
+                    height={16}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M5.591 15.069c.404.358.684.606.709.631.4.4 1 .4 1.4.1.05-.05 1.075-.975 2.1-1.9 1.025-.925 2.05-1.85 2.1-1.9 1.4-1.3 2.1-3.1 2.1-5 0-3.9-3.1-7-7-7S0 3.1 0 7c0 1.9.7 3.7 2.1 4.9 0 .075 2.293 2.107 3.491 3.169ZM7 13.7l-3.4-3C2.6 9.7 2 8.4 2 7c0-2.8 2.2-4.9 5-4.9s5 2.2 5 5c0 1.4-.6 2.6-1.6 3.6l-3.4 3ZM9 7a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+                  </svg>
+                  <div className="text-sm text-gray-200">
+                    Westlands, Rainbow Towers, Nairobi
+                  </div>
+                </div>
+              </div>
+              {/* Card */}
+              <div className="flex flex-col rounded-lg bg-gradient-to-b from-gray-700/50 to-gray-700/40 p-5">
+                <div className="grow mb-3">
+                  <div className="font-inter-tight font-semibold text-gray-200 mb-1">
+                    Phone
+                  </div>
+                  <p className="text-sm text-gray-500">
+                    Would you like to have a chat? Feel free to give us a call.
+                  </p>
+                </div>
+                <div className="flex items-center space-x-2.5">
+                  <svg
+                    className="shrink-0 fill-indigo-500/80"
+                    width={12}
+                    height={16}
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M10 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2ZM2 13V3h8v10H2Z" />
+                  </svg>
+                  <div className="text-sm text-gray-200">
+                    +254795635364
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
