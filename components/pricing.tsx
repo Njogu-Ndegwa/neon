@@ -1,5 +1,8 @@
+"use client";
+
 import Image from 'next/image'
 import Illustration from '@/public/images/pricing-illustration.svg'
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Pricing() {
   return (
@@ -26,17 +29,23 @@ export default function Pricing() {
               <div className="mb-6">
                 <div className="text-lg font-semibold mb-1">Web Development</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
-                  <span className="text-3xl font-medium text-gray-400">KES</span>
-                  <span className="text-4xl font-bold leading-7">100,000</span>
+                  <span className="text-3xl font-medium text-gray-400">$</span>
+                  <span className="text-4xl font-bold leading-7">800</span>
                   <span className="font-medium text-gray-400">/6mo</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams building apps for many public &amp; private users.</div>
-                <a className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
+                <ScrollLink
+                  to="resources" // This is the ID of the Resources section
+                  smooth={true}
+                  duration={500}
+                  offset={-70} // Offset for sticky header if necessary
+                  className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group cursor-pointer"
+                >
                   Enroll now{' '}
                   <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
-                </a>
+                </ScrollLink>
               </div>
               <div className="font-medium mb-4">Program benefits:</div>
               <ul className="text-gray-400 space-y-3 grow">
@@ -80,17 +89,23 @@ export default function Pricing() {
               <div className="mb-6">
                 <div className="text-lg font-semibold mb-1">Data Science</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
-                  <span className="text-3xl font-medium text-gray-400">KES</span>
-                  <span className="text-4xl font-bold leading-7"> 100,000</span>
+                  <span className="text-3xl font-medium text-gray-400">$</span>
+                  <span className="text-4xl font-bold leading-7"> 800</span>
                   <span className="font-medium text-gray-400">/6mo</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams analyzing data to gain insights for diverse public &amp; private users.</div>
-                <a className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
+                <ScrollLink
+                  to="resources" // This is the ID of the Resources section
+                  smooth={true}
+                  duration={500}
+                  offset={-70} // Offset for sticky header if necessary
+                  className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group cursor-pointer"
+                >
                   Enroll now{' '}
                   <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
-                </a>
+                </ScrollLink>
               </div>
               <div className="font-medium mb-4">Program benefits:</div>
               <ul className="text-gray-400 space-y-3 grow">
@@ -137,17 +152,29 @@ export default function Pricing() {
               <div className="mb-6">
                 <div className="text-lg font-semibold mb-1">Mobile App Development</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
-                  <span className="text-3xl font-medium text-gray-400">KES</span>
-                  <span className="text-4xl font-bold leading-7">100,000</span>
+                  <span className="text-3xl font-medium text-gray-400">$</span>
+                  <span className="text-4xl font-bold leading-7">800</span>
                   <span className="font-medium text-gray-400">/6mo</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams developing mobile apps for diverse public &amp; private users.</div>
-                <a className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
+                <ScrollLink
+                  to="resources" // This is the ID of the Resources section
+                  smooth={true}
+                  duration={500}
+                  offset={-70} // Offset for sticky header if necessary
+                  className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group cursor-pointer"
+                >
                   Enroll now{' '}
                   <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
                     -&gt;
                   </span>
-                </a>
+                </ScrollLink>
+                {/* <a className="btn-sm text-white bg-gradient-to-t from-blue-600 to-blue-400 hover:to-blue-500 w-full shadow-lg group" href="#0">
+                  Enroll now{' '}
+                  <span className="tracking-normal text-blue-200 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                    -&gt;
+                  </span>
+                </a> */}
               </div>
               <div className="font-medium mb-4">Program benefits:</div>
               <ul className="text-gray-400 space-y-3 grow">
