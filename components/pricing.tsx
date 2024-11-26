@@ -7,14 +7,22 @@ import { Link as ScrollLink } from 'react-scroll';
 
 export default function Pricing() {
   const [activePlan, setActivePlan] = useState('monthly'); // Default plan is 'complete'
-  const [price, setPrice] = useState(150); // Default price
+  const [price, setPrice] = useState(99); // Default price
+  const [priceAccelerator, setPriceAccelerator] = useState(149); // Default price
+  const [pricePro, setPricePro] = useState(199); // Default price
 
   const handleToggle = (plan:any) => {
     setActivePlan(plan);
     if (plan === 'complete') {
-      setPrice(720); // Update to monthly price
+      setPrice(239); // Update to monthly price
+      setPriceAccelerator(719)
+      setPricePro(999)
+
     } else {
-      setPrice(150); // Update to complete price
+      setPrice(99); // Update to complete price
+      setPriceAccelerator(149)
+      setPricePro(199)
+
     }
   };
   return (
@@ -65,13 +73,13 @@ export default function Pricing() {
             {/* Pricing table 1 */}
             <div className="relative flex flex-col h-full p-6" data-aos="zoom-out">
               <div className="mb-6">
-                <div className="text-lg font-semibold mb-1">Basic Plan</div>
+                <div className="text-lg font-semibold mb-1">Starter Pack</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
                   <span className="text-3xl font-medium text-gray-400">$</span>
                   <span className="text-4xl font-bold leading-7">{price.toFixed(2)}</span>
-                  <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/6mo'}</span>
+                  <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/3mo'}</span>
                 </div>
-                <div className="text-gray-400 mb-6">For individuals starting their tech learning journey.</div>
+                <div className="text-gray-400 mb-6">Kickstart your tech journey - No experience needed.</div>
                 <ScrollLink
                   to="resources" // This is the ID of the Resources section
                   smooth={true}
@@ -149,13 +157,13 @@ export default function Pricing() {
                 {/* </div> */}
               </div>
               <div className="mb-6">
-                <div className="text-lg font-semibold mb-1">Data Science</div>
+                <div className="text-lg font-semibold mb-1">Tech Accelerator</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
                   <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7">{price.toFixed(2)}</span>
+                  <span className="text-4xl font-bold leading-7">{priceAccelerator.toFixed(2)}</span>
                   <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/6mo'}</span>
                 </div>
-                <div className="text-gray-400 mb-6">For teams analyzing data to gain insights for diverse public &amp; private users.</div>
+                <div className="text-gray-400 mb-6">Level up your coding skills - Ready to build real projects.</div>
                 <ScrollLink
                   to="resources" // This is the ID of the Resources section
                   smooth={true}
@@ -175,50 +183,68 @@ export default function Pricing() {
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Comprehensive Data Science and Analytics Program.</span>
+                  <span>Full development curriculum access.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Machine Learning and AI Fundamentals.</span>
+                  <span>Advanced Frontend and Backend modules.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Big Data Technologies and Tools.</span>
+                  <span>Python for Data Science basics.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Personalized Learning Path.</span>
+                  <span>Machine Learning introduction.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Access to Expert Data Science Instructors.</span>
+                  <span>Practical AI tool workshops.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span> Hands-on Real-World Projects.</span>
+                  <span> Weekly mentoring sessions.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span> Hands-on project development.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span> Code review and feedback.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span> Priority learning support.</span>
                 </li>
               </ul>
             </div>
             {/* Pricing table 3 */}
             <div className="relative flex flex-col h-full p-6" data-aos="zoom-out" data-aos-delay="200">
               <div className="mb-6">
-                <div className="text-lg font-semibold mb-1">Mobile App Development</div>
+                <div className="text-lg font-semibold mb-1">Pro Developer Track</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
                   <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7">{price.toFixed(2)}</span>
+                  <span className="text-4xl font-bold leading-7">{pricePro.toFixed(2)}</span>
                   <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/6mo'}</span>
                 </div>
-                <div className="text-gray-400 mb-6">For teams developing mobile apps for diverse public &amp; private users.</div>
+                <div className="text-gray-400 mb-6">Transform into a job-ready tech professional.</div>
                 <ScrollLink
                   to="resources" // This is the ID of the Resources section
                   smooth={true}
@@ -240,29 +266,59 @@ export default function Pricing() {
               </div>
               <div className="font-medium mb-4">Program benefits:</div>
               <ul className="text-gray-400 space-y-3 grow">
-                <li className="flex items-center">
+              <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Comprehensive Mobile App Development Training.</span>
+                  <span>Full-Stack Development immersion.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Cross-Platform Development with React Native.</span>
+                  <span>Data Science & AI Engineering deep dive.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>User Interface and User Experience Design.</span>
+                  <span>DevOps and Cloud Technologies.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Backend Integration and API Development.</span>
+                  <span>Personal career mentorship.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Job placement preparation.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Professional portfolio building.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Tech industry networking events.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Unlimited course access.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Technical interview bootcamp.</span>
                 </li>
               </ul>
             </div>
