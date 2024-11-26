@@ -58,7 +58,7 @@ export default function Pricing() {
           } text-white rounded-lg mx-2`}
           onClick={() => handleToggle('complete')}
         >
-          Complete 6 months: get 1+ months free
+          Full Course: get 1+ months free
         </button>
       </div>
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-4">
