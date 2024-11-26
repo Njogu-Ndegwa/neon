@@ -1,10 +1,22 @@
 "use client";
 
+import { useState } from 'react';
 import Image from 'next/image'
 import Illustration from '@/public/images/pricing-illustration.svg'
 import { Link as ScrollLink } from 'react-scroll';
 
 export default function Pricing() {
+  const [activePlan, setActivePlan] = useState('monthly'); // Default plan is 'complete'
+  const [price, setPrice] = useState(150); // Default price
+
+  const handleToggle = (plan:any) => {
+    setActivePlan(plan);
+    if (plan === 'complete') {
+      setPrice(720); // Update to monthly price
+    } else {
+      setPrice(150); // Update to complete price
+    }
+  };
   return (
     <section id="courses" className="relative">
       {/* Illustration */}
@@ -18,11 +30,37 @@ export default function Pricing() {
             <h2 className="h2 font-uncut-sans mb-4">Find a Plan That's Right for You, 20% off for a limited time</h2>
             <div className="max-w-2xl mx-auto">
               <p className="text-xl text-gray-400">
-              For individuals eager to develop skills in web development, data science, and mobile app development.
+                For individuals eager to develop skills in web development, data science, and mobile app development.
               </p>
             </div>
           </div>
           {/* Pricing tables */}
+          {/* <div className="flex items-center justify-center mb-10">
+            <button className='px-4 py-2 bg-gradient-to-t from-blue-600 to-blue-400 text-white rounded-lg mx-2'>Monthly</button>
+            <button className="px-4 py-2 bg-gray-800 text-white rounded-lg mx-2">Complete: get 1+ months free</button>
+          </div> */}
+                <div className="flex items-center justify-center mb-10">
+        <button
+          className={`px-4 py-2 ${
+            activePlan === 'monthly'
+              ? 'bg-gradient-to-t from-blue-600 to-blue-400'
+              : 'bg-gray-800'
+          } text-white rounded-lg mx-2`}
+          onClick={() => handleToggle('monthly')}
+        >
+          Monthly
+        </button>
+        <button
+          className={`px-4 py-2 ${
+            activePlan === 'complete'
+              ? 'bg-gradient-to-t from-blue-600 to-blue-400'
+              : 'bg-gray-800'
+          } text-white rounded-lg mx-2`}
+          onClick={() => handleToggle('complete')}
+        >
+          Complete 6 months: get 1+ months free
+        </button>
+      </div>
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-4">
             {/* Pricing table 1 */}
             <div className="relative flex flex-col h-full p-6" data-aos="zoom-out">
@@ -30,8 +68,8 @@ export default function Pricing() {
                 <div className="text-lg font-semibold mb-1">Web Development</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
                   <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7">800</span>
-                  <span className="font-medium text-gray-400">/6mo</span>
+                  <span className="text-4xl font-bold leading-7">{price.toFixed(2)}</span>
+                  <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/6mo'}</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams building apps for many public &amp; private users.</div>
                 <ScrollLink
@@ -78,20 +116,20 @@ export default function Pricing() {
             {/* Pricing table 2 */}
             <div className="relative flex flex-col h-full p-6 bg-gray-800" data-aos="zoom-out" data-aos-delay="100">
               <div className="absolute top-0 right-0 mr-6 -mt-4">
-              
+
                 {/* <div className="inline-flex items-center text-sm font-semibold py-1 px-3 text-emerald-600 bg-emerald-200 rounded-full"> */}
-                  {/* <svg className="fill-emerald-500 mr-2" width="12" height="14" xmlns="http://www.w3.org/2000/svg">
+                {/* <svg className="fill-emerald-500 mr-2" width="12" height="14" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.315.068a.5.5 0 0 0-.745.347A7.31 7.31 0 0 1 3.182 3.6a7.924 7.924 0 0 1-.8.83A6.081 6.081 0 0 0 0 9.035a5.642 5.642 0 0 0 2.865 4.9.5.5 0 0 0 .746-.4 2.267 2.267 0 0 1 .912-1.67 4.067 4.067 0 0 0 1.316-1.4 4.662 4.662 0 0 1 1.819 3.1.5.5 0 0 0 .742.371c1.767-.999 2.86-2.87 2.865-4.9-.001-3.589-2.058-6.688-5.95-8.968Z" />
                   </svg> */}
-                  {/* <span>Most Popular</span> */}
+                {/* <span>Most Popular</span> */}
                 {/* </div> */}
               </div>
               <div className="mb-6">
                 <div className="text-lg font-semibold mb-1">Data Science</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
                   <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7"> 800</span>
-                  <span className="font-medium text-gray-400">/6mo</span>
+                  <span className="text-4xl font-bold leading-7">{price.toFixed(2)}</span>
+                  <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/6mo'}</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams analyzing data to gain insights for diverse public &amp; private users.</div>
                 <ScrollLink
@@ -153,8 +191,8 @@ export default function Pricing() {
                 <div className="text-lg font-semibold mb-1">Mobile App Development</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
                   <span className="text-3xl font-medium text-gray-400">$</span>
-                  <span className="text-4xl font-bold leading-7">800</span>
-                  <span className="font-medium text-gray-400">/6mo</span>
+                  <span className="text-4xl font-bold leading-7">{price.toFixed(2)}</span>
+                  <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/6mo'}</span>
                 </div>
                 <div className="text-gray-400 mb-6">For teams developing mobile apps for diverse public &amp; private users.</div>
                 <ScrollLink
