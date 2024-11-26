@@ -58,20 +58,20 @@ export default function Pricing() {
           } text-white rounded-lg mx-2`}
           onClick={() => handleToggle('complete')}
         >
-          Full Course: get 1+ months free
+          Full Course: 1+ month free
         </button>
       </div>
           <div className="max-w-sm mx-auto grid gap-8 lg:grid-cols-3 lg:gap-6 items-start lg:max-w-none pt-4">
             {/* Pricing table 1 */}
             <div className="relative flex flex-col h-full p-6" data-aos="zoom-out">
               <div className="mb-6">
-                <div className="text-lg font-semibold mb-1">Web Development</div>
+                <div className="text-lg font-semibold mb-1">Basic Plan</div>
                 <div className="font-uncut-sans inline-flex items-baseline mb-2">
                   <span className="text-3xl font-medium text-gray-400">$</span>
                   <span className="text-4xl font-bold leading-7">{price.toFixed(2)}</span>
                   <span className="font-medium text-gray-400">{activePlan === 'monthly' ? '/mo' : '/6mo'}</span>
                 </div>
-                <div className="text-gray-400 mb-6">For teams building apps for many public &amp; private users.</div>
+                <div className="text-gray-400 mb-6">For individuals starting their tech learning journey.</div>
                 <ScrollLink
                   to="resources" // This is the ID of the Resources section
                   smooth={true}
@@ -91,25 +91,49 @@ export default function Pricing() {
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Responsive Web Design.</span>
+                  <span>Access to fundamental video courses.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Frontend & Backend Integration.</span>
+                  <span>Introduction to Frontend Development.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Secure Authentication & Authorization.</span>
+                  <span>Basic HTML, CSS, and JavaScript.</span>
                 </li>
                 <li className="flex items-center">
                   <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
                   </svg>
-                  <span>Full-Stack JavaScript Development.</span>
+                  <span>Community forum access.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Monthly live Q&A session.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Certificate of completion.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Limited practice assignments.</span>
+                </li>
+                <li className="flex items-center">
+                  <svg className="w-3 h-3 fill-current text-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.28 2.28L3.989 8.575 1.695 6.28A1 1 0 00.28 7.695l3 3a1 1 0 001.414 0l7-7A1 1 0 0010.28 2.28z" />
+                  </svg>
+                  <span>Basic chat support.</span>
                 </li>
               </ul>
             </div>
